@@ -206,16 +206,17 @@ The class of var_x is character
     Now the class of var_x is numeric
         Next class of var_x becomes integer
 ```
+## Finding Variables
 
+```
+print(ls())                     -->Shows currently availabe variables
+print(ls(pattern="var"))        -->List the variable starting with pattern "var".
+print(ls(all.name=TRUE))        -->Variables starting with dot(.) are hidden, to list them
+```
 
+## Deleting Variables
 
-
-
-
-
-
-
-
-
-
-
+```
+rm(var.3)                       -->To delete a variable (var.3)
+rm(list=ls())                   -->To delete all variables
+```
