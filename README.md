@@ -253,12 +253,12 @@ Let we have two vectors-->
                 v<-c(2,5.5,6,9)
                 t<-c(8,2.5,14,9)
 s
->       Check if element of 1st are grater than 2nd                     print(v>t)              [1] FALSE  TRUE  FALSE  FALSE
-<       Check if element of 1st are smaller than 2nd                    print(v<t>)             [1] TRUE  FALSE  TRUE  FALSE
-==      Check if element of 1st are equals to 2nd                       print(v==t)             [1] FALSE  FALSE  FALSE TRUE
-<=      Check if element of 1st are smaller than or equals to 2nd       print(v<=t)             [1] TRUE  FALSE  TRUE  TRUE
->=      Check if element of 1st are greater than or equals to 2nd       print(v>=t)             [1] FALSE  TRUE  FALSE  TRUE
-!=      heck if element of 1st is not equals to 2nd                     print(v!=t)             [1] TRUE  TRUE  TRUE  FALSE
+>       Check if element of 1st are grater than 2nd                     print(v>t)              [1] FALSE  TRUE   FALSE  FALSE
+<       Check if element of 1st are smaller than 2nd                    print(v<t>)             [1] TRUE   FALSE  TRUE   FALSE
+==      Check if element of 1st are equals to 2nd                       print(v==t)             [1] FALSE  FALSE  FALSE  TRUE
+<=      Check if element of 1st are smaller than or equals to 2nd       print(v<=t)             [1] TRUE   FALSE  TRUE   TRUE
+>=      Check if element of 1st are greater than or equals to 2nd       print(v>=t)             [1] FALSE  TRUE   FALSE  TRUE
+!=      heck if element of 1st is not equals to 2nd                     print(v!=t)             [1] TRUE   TRUE   TRUE   FALSE
 ```
 
 ## Logical Operations
