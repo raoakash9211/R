@@ -220,3 +220,53 @@ print(ls(all.name=TRUE))        -->Variables starting with dot(.) are hidden, to
 rm(var.3)                       -->To delete a variable (var.3)
 rm(list=ls())                   -->To delete all variables
 ```
+
+## R - Operations
+
+Types of operations >>
+* Arithmetic Operations
+* Relational Operations
+* Logical Operations
+* Assignment Operations
+* Miscellaneous Operations
+
+## Arithmetic Operations
+
+```
+Let we have two vecotrs-->
+                v<-c(2,5.5,6)
+                t<-c(8,3,4)
+
++       Adds two vectors                                print(v+t)              [1] 10.0  8.5  10.0
+-       Subtracts 2nd vector from 1st                   print(v-t)              [1] -6.0  2.5  2.0
+*       Multiplies both vectors                         print(v*t)              [1] 16.0 16.5 24.0
+/       Divide 1st with 2nd                             print(v/t)              [1] 0.250000 1.833333 1.500000
+%%      Give the remainder of 1st vector with 2nd       print(v%%t)             [1] 2.0 2.5 2.0
+%/%     The result of division of 1st vector with 2nd   print(v%/%t)            [1] 0 1 1
+^       1st vector raised to the exponent of 2nd        print(v^t)              [1]  256.000  166.375 1296.000
+```
+
+## Relational Operations
+
+```
+Let we have two vectors-->
+                v<-c(2,5.5,6,9)
+                t<-c(8,2.5,14,9)
+s
+>       Check if element of 1st are grater than 2nd                     print(v>t)              [1] FALSE  TRUE  FALSE  FALSE
+<       Check if element of 1st are smaller than 2nd                    print(v<t>)             [1] TRUE  FALSE  TRUE  FALSE
+==      Check if element of 1st are equals to 2nd                       print(v==t)             [1] FALSE  FALSE  FALSE TRUE
+<=      Check if element of 1st are smaller than or equals to 2nd       print(v<=t)             [1] TRUE  FALSE  TRUE  TRUE
+>=      Check if element of 1st are greater than or equals to 2nd       print(v>=t)             [1] FALSE  TRUE  FALSE  TRUE
+!=      heck if element of 1st is not equals to 2nd                     print(v!=t)             [1] TRUE  TRUE  TRUE  FALSE
+```
+
+## Logical Operations
+
+```
+Let we have two vectors-->
+                v<-c(3,0,TRUE,2+3i)
+                t<-c(4,0,FALSE,2+3i)
+
+&       Element-wise Logical AND operator
+```
