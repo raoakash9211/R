@@ -269,4 +269,207 @@ Let we have two vectors-->
                 t<-c(4,0,FALSE,2+3i)
 
 &       Element-wise Logical AND operator
+        It combines elements of 1st and 2nd vector and gives an output TRUE if both the elements are true.              print(v&t)              [1] TRUE  TRUE  FALSE  TRUE
+
+|       Element-wise logical OR operator
+        It combines elements of 1st and 2nd vector and gives an output TRUE if any one of the elements is true.         print(v|t)              [1] TRUE  FALSE  TRUE  TRUE
+
+!       Logical NOT Operator
+        Takes each element of the vector and gives the opposite logical value.                                          print(!v)               [1] FALSE  TRUE  FALSE  FALSE
+
+
+<!---The logical operator && and || considers only the first element of the vectors and give a vector of single element as output.--->
+
+&&      Logical AND Operator
+        Takes first element of both the vectors and gives the TRUE only if both are TRUE.                               print(v&&t)             [1] TRUE
+
+||      Logical OR Operator
+        Takes first element of both the vectors and gives the TRUE if one of them is TRUE.                              print(v||t)             [1] FALSE
+
+```
+
+## Assignment Operator
+
+These operations are used to assign values to operators.
+```
+
+<- or = or <<-          Left assignment        v1 <- c(3,1,TRUE,2+3i)
+                                                v2 <<- c(3,1,TRUE,2+3i)
+                                                v3 = c(3,1,TRUE,2+3i)
+                                                print(v1)
+                                                print(v2)
+                                                print(v3)
+
+                        It produces the following output-->
+                                                [1] 3+0i 1+0i 1+0i 2+3i
+                                                [1] 3+0i 1+0i 1+0i 2+3i
+                                                [1] 3+0i 1+0i 1+0i 2+3i
+
+-> or ->>               Right assignment        c(3,1,TRUE,2+3i) -> v1
+                                                c(3,1,TRUE,2+3i) ->> v2 
+                                                print(v1)
+                                                print(v2)
+
+                        It produces the following output-->
+                                                [1] 3+0i 1+0i 1+0i 2+3i
+                                                [1] 3+0i 1+0i 1+0i 2+3i
+```
+
+## Miscellaneous Operator
+
+```
+:       Colon Operator
+         It creates the series of numbers in sequence for a vector.     v <- 2:8
+                                                                        print(v)
+%in%    To identify if an element belongs to a vector.                  v1 <- 8
+                                                                        v2 <- 12
+                                                                        t <- 1:10
+                                                                        print(v1 %in% t)
+                                                                        print(v2 %in% t)
+                                It produces the following output-->
+                                                                        [1] TRUE
+                                                                        [1] FALSE
+%*%     Used to multiply a matrix with its transpose.                   M = matrix( c(2,6,5,1,10,4), nrow = 2,ncol = 3,byrow = TRUE)
+                                                                        t = M %*% t(M)
+                                                                        print(t)
+                                It produces the following output-->
+                                                                              [,1] [,2]
+                                                                        [1,]   65   82
+                                                                        [2,]   82  117
+```
+
+## R - Decision Making
+
+if statement            --> if statement consists of a Boolean expression followed by one or more statements.
+```
+x <- 30L
+if(is.integer(x)) {
+   print("X is an Integer")
+}
+It produces the following output-->
+        [1] "X is an Integer"
+```
+if...else statement     --> if statement can be followed by an optional else statement, which executes when the Boolean expression is false.
+```
+x <- c("what","is","truth")
+
+if("Truth" %in% x) {
+   print("Truth is found the first time")
+} else if ("truth" %in% x) {
+   print("truth is found the second time")
+} else {
+   print("No truth found")
+}
+
+It produces the following output-->
+[1] "truth is found the second time"
+```
+switch statement        --> switch statement allows a variable to be tested for equality against a list of values.
+```
+x <- switch(
+   3,
+   "first",
+   "second",
+   "third",
+   "fourth"
+)
+print(x)
+
+It produces the following result-->
+[1] "third"
+```
+
+## R - Loops
+
+repeat loop             -->Executes a sequence of statements multiple times and abbreviates the code that manages the loop variable.
+```
+v <- c("Hello","loop")
+cnt <- 2
+
+repeat {
+   print(v)
+   cnt <- cnt+1
+   
+   if(cnt > 5) {
+      break
+   }
+}
+
+It produces the following result-->
+[1] "Hello" "loop" 
+[1] "Hello" "loop" 
+[1] "Hello" "loop" 
+[1] "Hello" "loop" 
+```
+while loop              -->Repeats a statement or group of statements while a given condition is true. It tests the condition before executing the loop body.
+```
+v <- c("Hello","while loop")
+cnt <- 2
+
+while (cnt < 7) {
+   print(v)
+   cnt = cnt + 1
+}
+
+It produces the following output-->
+[1] "Hello"  "while loop"
+[1] "Hello"  "while loop"
+[1] "Hello"  "while loop"
+[1] "Hello"  "while loop"
+[1] "Hello"  "while loop"
+```
+for loop                -->Like a while statement, except that it tests the condition at the end of the loop body.
+```
+v <- LETTERS[1:4]
+for ( i in v) {
+   print(i)
+}
+
+It produces the following output-->
+[1] "A"
+[1] "B"
+[1] "C"
+[1] "D"
+```
+
+## Loop Control Statement
+
+break statement         -->Terminates the loop statement and transfers execution to the statement immediately following the loop.
+```
+v <- c("Hello","loop")
+cnt <- 2
+
+repeat {
+   print(v)
+   cnt <- cnt + 1
+	
+   if(cnt > 5) {
+      break
+   }
+}
+
+It produces the following output-->
+[1] "Hello" "loop"
+[1] "Hello" "loop"
+[1] "Hello" "loop"
+[1] "Hello" "loop"
+```
+
+next statement          -->The next statement simulates the behavior of R switch.
+```
+v <- LETTERS[1:6]
+for ( i in v) {
+   
+   if (i == "D") {
+      next
+   }
+   print(i)
+}
+
+It produces the following optput-->
+[1] "A"
+[1] "B"
+[1] "C"
+[1] "E"
+[1] "F"
 ```
