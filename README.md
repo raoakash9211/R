@@ -510,3 +510,141 @@ new.function <- function(a) {
    }
 }
 ```
+
+## Calling a Function
+```
+# Create a function to print squares of numbers in sequence.
+new.function <- function(a) {
+   for(i in 1:a) {
+      b <- i^2
+      print(b)
+   }
+}
+
+# Call the function new.function supplying 6 as an argument.
+new.function(6)
+
+It will produce the following output-->
+[1] 1
+[1] 4
+[1] 9
+[1] 16
+[1] 25
+[1] 36
+```
+
+## Calling a function without an argument
+
+```
+# Create a function without an argument.
+new.function <- function() {
+   for(i in 1:5) {
+      print(i^2)
+   }
+}	
+
+# Call the function without supplying an argument.
+new.function()
+
+It will produce the following output-->
+[1] 1
+[1] 4
+[1] 9
+[1] 16
+[1] 25
+```
+
+## Calling the function with argument values(by position and by name)
+
+```
+# Create a function with arguments.
+new.function <- function(a,b,c) {
+   result <- a * b + c
+   print(result)
+}
+
+# Call the function by position of arguments.
+new.function(5,3,11)
+
+# Call the function by names of the arguments.
+new.function(a = 11, b = 5, c = 3)
+
+It will produce the following output-->
+[1] 26
+[2] 58
+```
+
+## Calling a function with default argument
+
+```
+# Create a function with arguments.
+new.function <- function(a = 3, b = 6) {
+   result <- a * b
+   print(result)
+}
+
+# Call the function without giving any argument.
+new.function()
+
+# Call the function with giving new values of the argument.
+new.function(9,5)
+
+It will produce the following output-->
+[1] 18
+[1] 45
+```
+
+## Lazy evaluation of Function
+
+```
+# Create a function with arguments.
+new.function <- function(a, b) {
+   print(a^2)
+   print(a)
+   print(b)
+}
+
+# Evaluate the function without supplying one of the arguments.
+new.function(6)
+
+It will produce the following output-->
+[1] 36
+[1] 6
+Error in print(b) : argument "b" is missing, with no default
+```
+
+## R - Strings
+
+Examples of valid Strings
+```
+a <- 'Start and end with single quote'
+print(a)
+b <- "Start and end with double quotes"
+print(b)
+c <- "single quote ' in between double quotes"
+print(c)
+d <- 'Double quotes " in between single quote'
+print(d)
+
+It will produce the following output-->
+[1] "Start and end with single quote"
+[1] "Start and end with double quotes"
+[1] "single quote ' in between double quote"
+[1] "Double quote \" in between single quote"
+```
+
+Examples of invalid strings-->
+```
+e <- 'Mixed quotes" 
+print(e)
+f <- 'Single quote ' inside single quote'
+print(f)
+g <- "Double quotes " inside double quotes"
+print(g)
+
+It produces the following output-->
+Error: unexpected symbol in:
+"print(e)
+f <- 'Single"
+Execution halted
+```
