@@ -473,3 +473,40 @@ It produces the following optput-->
 [1] "E"
 [1] "F"
 ```
+
+## R - Functions
+
+```
+<!---Function Definition--->
+function_name <- function(arg_1, arg_2, ...) {
+   Function body 
+}
+```
+
+## Built-in Function
+```
+# Create a sequence of numbers from 32 to 44.
+print(seq(32,44))
+
+# Find mean of numbers from 25 to 82.
+print(mean(25:82))
+
+# Find sum of numbers frm 41 to 68.
+print(sum(41:68))
+
+It will produce the following output-->
+[1] 32 33 34 35 36 37 38 39 40 41 42 43 44
+[1] 53.5
+[1] 1526
+```
+
+## User-defined Function
+```
+# Create a function to print squares of numbers in sequence.
+new.function <- function(a) {
+   for(i in 1:a) {
+      b <- i^2
+      print(b)
+   }
+}
+```
