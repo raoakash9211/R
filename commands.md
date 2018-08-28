@@ -1,11 +1,11 @@
 ```
 ls	      [L]i[S]t objects	common command in Unix-like operating systems
 rm	      [R]e[M]ove objects	common command in Unix-like operating systems
-str	      [STR]ucture of an object	
-unz	      [UNZ]ip	
-getwd	    [GET] [W]orking [D]irectory	
-dir	      [DIR]ectory	
-sprintf	  [S]tring [PRINT] [F]ormatted	
+str	      [STR]ucture of an object
+unz	      [UNZ]ip
+getwd	    [GET] [W]orking [D]irectory
+dir	      [DIR]ectory
+sprintf	  [S]tring [PRINT] [F]ormatted
 c	        [C]ombine values	
 regexpr	  [REG]ular [EXPR]ession	Why "regular"? See regular sets, regular language
 diag	    [DIAG]onal values of a matrix	
@@ -58,46 +58,46 @@ nrow	    [N]umber of [ROW]s
 ncol	    [N]umber of [COL]umns	
 attr	    [ATTR]ibute	
 rev	      [REV]erse	
-diff	[DIFF]erence between x and a lag of x	
-prod	[PROD]uct	
-var	[VAR]iance	
-sd	[S]tandard [D]eviation	
-cumsum	[CUM]ulative [SUM]	
-cumprod	[CUM]ulative [PROD]uct	
-setdiff	[SET] [DIFF]erence	
+diff	    [DIFF]erence between x and a lag of x	
+prod	    [PROD]uct	
+var	      [VAR]iance	
+sd	      [S]tandard [D]eviation	
+cumsum	  [CUM]ulative [SUM]	
+cumprod	  [CUM]ulative [PROD]uct	
+setdiff	  [SET] [DIFF]erence	
 intersect	[INTERSECT]ion	
-Re	[RE]al part of a number	
-Im	[IM]aginary part of a number	
-Mod	[MOD]ulo operation	remainder of division of one number by another
-t	[T]ranspose of a vector or matrix	
-substr	[SUBSTR]ing	
+Re	      [RE]al part of a number	
+Im	      [IM]aginary part of a number	
+Mod	      [MOD]ulo operation	remainder of division of one number by another
+t	        [T]ranspose of a vector or matrix	
+substr	  [SUBSTR]ing	
 strsplit	[STR]ing [SPLIT]	
-grep	[G]lobal / [R]egular [E]xpression / [P]rint	Etymology based on text editor instructions in programs such as ed
-sub	[SUB]stitute identified pattern found in string	
-gsub	[G]lobal [SUB]stitute identified pattern found in string	
-pmatch	[P]artial string [MATCH]ing	
-nchar	[N]umber of [CHAR]acters in a string	
+grep	    [G]lobal / [R]egular [E]xpression / [P]rint	Etymology based on text editor instructions in programs such as ed
+sub	      [SUB]stitute identified pattern found in string	
+gsub	    [G]lobal [SUB]stitute identified pattern found in string	
+pmatch	  [P]artial string [MATCH]ing	
+nchar	    [N]umber of [CHAR]acters in a string	
 ps.options	[P]ost-[S]cript [OPTIONS]	
 win.metafile	[WIN]dows [METAFILE] graphic	
-dev.off	[DEV]ice [OFF]	
-dev.cur	[CUR]rent [DEV]ice	
-dev.set	[SET] the current [DEV]ice	
-hist	[HIST]ogram	
-pie	[PIE] Chart	
-coplot	[CO]nditioning [PLOT]	
-matplot	[PLOT] columns of [MAT]rices	
+dev.off	  [DEV]ice [OFF]	
+dev.cur	  [CUR]rent [DEV]ice	
+dev.set	  [SET] the current [DEV]ice	
+hist	    [HIST]ogram	
+pie	      [PIE] Chart	
+coplot	  [CO]nditioning [PLOT]	
+matplot	  [PLOT] columns of [MAT]rices	
 assocplot	[ASSOC]iation [PLOT]	
-plot.ts	[PLOT] [T]ime [S]eries	
-qqnorm	[Q]uantile-[Q]uantile [P]lot based on normal distribution	
-persp	[PERSP]ective [P]lot	
-xlim	[LIM]it of the [X] axis	
-ylim	[LIM]it of the [Y] axis	
-xlab	[LAB]el for the [X] axis	
-ylab	[LAB]el for the [Y] axis	
-main	[MAIN] title for the plot	
-sub	[SUB] title for the plot	
-mtext	[M]argin [TEXT]	
-abline	[LINE] on plot often of the form y = [A] + [B] x	
+plot.ts	  [PLOT] [T]ime [S]eries	
+qqnorm	  [Q]uantile-[Q]uantile [P]lot based on normal distribution	
+persp	    [PERSP]ective [P]lot	
+xlim	    [LIM]it of the [X] axis	
+ylim	    [LIM]it of the [Y] axis	
+xlab	    [LAB]el for the [X] axis	
+ylab	    [LAB]el for the [Y] axis	
+main	    [MAIN] title for the plot	
+sub	      [SUB] title for the plot	
+mtext	    [M]argin [TEXT]	
+abline	  [LINE] on plot often of the form y = [A] + [B] x	
 h argument in abline	[H]orizontal line	
 v argument in abline	[V]ertical line	
 par	Graphics [PAR]ameter	
@@ -118,7 +118,7 @@ mfg as par	Next [G]raph for [M]atrix of [F]igures
 mfcol as par	[M]atrix of [F]igures entered [COL]umn-wise	
 mfrow as par	[M]atrix of [F]igures entered [ROW]-wise	
 pch as par	[P]lotting [CH]aracter	
-ps as par	[P]oint [S]ize of text	Point is a printing measurement
+ps as par	  [P]oint [S]ize of text	Point is a printing measurement
 pty as par	[P]lot region [TY]pe	
 tck as par	[T]i[CK] mark length	
 tcl as par	[T]i[C]k mark [L]ength	
@@ -133,48 +133,48 @@ omi as par	[O]uter [M]argin width in [I]nches
 mai as par	[MA]rgin width in [I]nches	
 pin as par	[P]lot size in [IN]ches	
 xpd as par		Perhaps: [X = Cut] [P]lot ? Perhaps D for device
-xyplot	[X] [Y] [PLOT]	[X] for horizontal axis; [Y] for vertical axis
-bwplot	[B]ox and [W]hisker plot	
-qq	[Q]uantile-[Quantile] plot'	
-splom	[S]catter[PLO]t [M]atrix	
-optim	[OPTIM]isation	
-lm	[L]inear [M]odel	
-glm	[G]eneralised [L]inear [M]odel	
-nls	[N]onlinear [L]east [S]quare parameter esetimation	
-loess	[LO]cally [E]stimated [S]catterplot [S]moothing	
-prop.test	[TEST] null hypothesis that [PROP]ortions in several groups are the same	
-rnorm	[R]andom number drawn from [NORM]al distribution	
-dnorm	[D]ensity of a given quantile in a [NORM]al distribution	
-pnorm	[D]istribution function for [NORM]al distribution returning cumulaive [P]robability	
-qnorm	[Q]uantile function based on [NORM]al distribution	
-rexp	[R]andom number generation from [EXP]onential distribution	
-rgamma	[R]andom number generation from [GAMMA] distribution	
-rpois	[R]andom number generation from [POIS]on distribution	
-rweibull	[R]andom number generation from [WEIBULL] distribution	
-rcauchy	[R]andom number generation from [CAUCHY] distribution	
-rbeta	[R]andom number generation from [BETA] distribution	
-rt	[R]andom number generation from [t] distribution	
-rf	[R]andom number generation from [F] distribution	F for Ronald [F]isher
-rchisq	[R]andom number generation from [CHI] [SQ]uare distribution	
-rbinom	[R]andom number generation from [BINOM]ial distribution	
-rgeom	[R]andom number generation from [EXP]onential distribution	
-rhyper	[R]andom number generation from [HYPER]geometric distribution	
-rlogis	[R]andom number generation from [LOGIS]tic distribution	
-rlnorm	[R]andom number generation from [L]og [NOR]mal distribution	
-rnbinom	[R]andom number generation from [N]egative [BINOM]ial distribution	
-runif	[R]andom number generation from [UNIF]orm distribution	
-rwilcox	[R]andom number generation from [WILCOX]on distribution	
-ggplot in ggplot2	[G]rammar of [G]raphics [PLOT]	See Leland Wilkinson (1999)
-aes in ggplot2	[AES]thetic mapping	
-geom_ in ggplot2	[GEOM]etric object	
-stat_ in ggplot2	[STAT]istical summary	
-coord_ in ggplot2	[COORD]inate system	
-qplot in ggplot2	[Q]uick [PLOT]	
-x as argument	[X] is common letter for unknown variable in math	
-FUN as argument	[FUN]ction	
-pos as argument	[POS]ition	
-lib.loc in library	[LIB]rary folder [LOC]ation	
-sep as argument	[SEP]erator character	
+xyplot	    [X] [Y] [PLOT]	[X] for horizontal axis; [Y] for vertical axis
+bwplot	    [B]ox and [W]hisker plot	
+qq	        [Q]uantile-[Quantile] plot'	
+splom	      [S]catter[PLO]t [M]atrix	
+optim	      [OPTIM]isation	
+lm	        [L]inear [M]odel	
+glm	        [G]eneralised [L]inear [M]odel	
+nls	        [N]onlinear [L]east [S]quare parameter esetimation	
+loess	      [LO]cally [E]stimated [S]catterplot [S]moothing	
+prop.test	  [TEST] null hypothesis that [PROP]ortions in several groups are the same	
+rnorm	      [R]andom number drawn from [NORM]al distribution	
+dnorm	      [D]ensity of a given quantile in a [NORM]al distribution	
+pnorm	      [D]istribution function for [NORM]al distribution returning cumulaive [P]robability	
+qnorm	      [Q]uantile function based on [NORM]al distribution	
+rexp	      [R]andom number generation from [EXP]onential distribution	
+rgamma	    [R]andom number generation from [GAMMA] distribution	
+rpois	      [R]andom number generation from [POIS]on distribution	
+rweibull	  [R]andom number generation from [WEIBULL] distribution	
+rcauchy	    [R]andom number generation from [CAUCHY] distribution	
+rbeta	      [R]andom number generation from [BETA] distribution	
+rt	        [R]andom number generation from [t] distribution	
+rf	        [R]andom number generation from [F] distribution	F for Ronald [F]isher
+rchisq	    [R]andom number generation from [CHI] [SQ]uare distribution	
+rbinom	    [R]andom number generation from [BINOM]ial distribution	
+rgeom	      [R]andom number generation from [EXP]onential distribution	
+rhyper	    [R]andom number generation from [HYPER]geometric distribution	
+rlogis	    [R]andom number generation from [LOGIS]tic distribution	
+rlnorm	    [R]andom number generation from [L]og [NOR]mal distribution	
+rnbinom	    [R]andom number generation from [N]egative [BINOM]ial distribution	
+runif	      [R]andom number generation from [UNIF]orm distribution	
+rwilcox	    [R]andom number generation from [WILCOX]on distribution	
+ggplot in ggplot2	    [G]rammar of [G]raphics [PLOT]	See Leland Wilkinson (1999)
+aes in ggplot2	      [AES]thetic mapping	
+geom_ in ggplot2	    [GEOM]etric object	
+stat_ in ggplot2	    [STAT]istical summary	
+coord_ in ggplot2	    [COORD]inate system	
+qplot in ggplot2	    [Q]uick [PLOT]	
+x as argument	        [X] is common letter for unknown variable in math	
+FUN as argument	      [FUN]ction	
+pos as argument	      [POS]ition	
+lib.loc in library	  [LIB]rary folder [LOC]ation	
+sep as argument	      [SEP]erator character	
 comment.char in read.table	[COMMENT] [CHAR]acter(s)	
 I	[I]nhibit [I]nterpretation or [I]nsulate	
 T value	[T]rue	
