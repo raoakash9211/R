@@ -648,3 +648,193 @@ Error: unexpected symbol in:
 f <- 'Single"
 Execution halted
 ```
+
+## String Manipulation
+
+The basic syntax for paste function is −
+```
+paste(..., sep = " ", collapse = NULL)
+
+...             Represents any number of arguments to be combined.
+sep             Represents any seprator betweent he arguments. It is optional.
+collapse        It is used to eliminate the space in between two strings. But not the space within two words of one string.
+```
+Example:
+```
+a <- "Hello"
+b <- 'How'
+c <- "are you? "
+print(paste(a,b,c))
+print(paste(a,b,c, sep = "-"))
+print(paste(a,b,c, sep = "", collapse = ""))
+
+It will produce the following output:
+[1] "Hello How are you? "
+[1] "Hello-How-are you? "
+[1] "HelloHoware you? "
+```
+
+## Formatting numbers & strings - format() function
+
+**Syntax**
+The basic syntax for format function is −
+```
+format(x, digits, nsmall, scientific, width, justify = c("left", "right", "centre", "none"))
+```
+**Description of the parameters used −**
+
+**x** is the vector input.
+
+**digits** is the total number of digits displayed.
+
+**nsmall** is the minimum number of digits to the right of the decimal point.
+
+**scientific** is set to TRUE to display scientific notation.
+
+**width** indicates the minimum width to be displayed by padding blanks in the beginning.
+
+**justify** is the display of the string to left, right or center.
+
+
+Example:
+```
+# Total number of digits displayed. Last digit rounded off.
+result <- format(23.123456789, digits = 9)
+print(result)
+
+# Display numbers in scientific notation.
+result <- format(c(6, 13.14521), scientific = TRUE)
+print(result)
+
+# The minimum number of digits to the right of the decimal point.
+result <- format(23.47, nsmall = 5)
+print(result)
+
+# Format treats everything as a string.
+result <- format(6)
+print(result)
+
+# Numbers are padded with blank in the beginning for width.
+result <- format(13.7, width = 6)
+print(result)
+
+# Left justify strings.
+result <- format("Hello", width = 8, justify = "l")
+print(result)
+
+# Justfy string with center.
+result <- format("Hello", width = 8, justify = "c")
+print(result)
+```
+
+It will produce the following output:
+```
+[1] "23.1234568"
+[1] "6.000000e+00" "1.314521e+01"
+[1] "23.47000"
+[1] "6"
+[1] "  13.7"
+[1] "Hello   "
+[1] " Hello  "
+```
+
+**Syntax**
+The basic syntax for nchar() function is −
+`nchar(x)`
+
+**Description of the parameters used −**
+
+* x is the vector input.
+
+Example:
+```
+result <- nchar("Count the number of characters")
+print(result)
+```
+
+It will produce the following output:
+` [1] 30 `
+
+## Changing the case - toupper() & tolower() functions
+
+Changes the case of the string.
+
+**Syntax**
+The basic syntax for toupper() & tolower() function is −
+```
+toupper(x)
+tolower(x)
+```
+**Description of the parameters used −**
+
+* **x** is the vector input.
+
+Example
+```
+# Changing to Upper case.
+result <- toupper("Changing To Upper")
+print(result)
+
+# Changing to lower case.
+result <- tolower("Changing To Lower")
+print(result)
+
+It will produce the following output:
+[1] "CHANGING TO UPPER"
+[1] "changing to lower"
+```
+
+## Extracting parts of a string - substring() function
+
+**Syntax**
+The basic syntax for substring() function is −
+`substring(x,first,last)`
+
+**Description of the parameters used −**
+* **x** is the character vector input.
+* **first** is the position of the first character to be extracted.
+* **last** is the position of the last character to be extracted.
+
+Example:
+```
+# Extract characters from 5th to 7th position.
+result <- substring("Extract", 5, 7)
+print(result)
+
+It will produce the following output: 
+[1] "act"
+```
+
+## R - Vectors
+
+**Single Element Vector**
+
+When we write just one value in R, it becomes a vector of length 1 and belongs to one of the above vector types.
+```
+# Atomic vector of type character.
+print("abc");
+
+# Atomic vector of type double.
+print(12.5)
+
+# Atomic vector of type integer.
+print(63L)
+
+# Atomic vector of type logical.
+print(TRUE)
+
+# Atomic vector of type complex.
+print(2+3i)
+
+# Atomic vector of type raw.
+print(charToRaw('hello'))
+
+
+It produces the following output:
+[1] "abc"
+[1] 12.5
+[1] 63
+[1] TRUE
+[1] 2+3i
+[1] 68 65 6c 6c 6f
+```
