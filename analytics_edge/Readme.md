@@ -16,11 +16,10 @@ summary(WHO)        ->To view summary of each variable.
                                         -Max
 ```
 
-`WHO_Europe = subset(WHO,Region=="Europe")`     ->Create a new dataset with only the countries in Europe.
-
-`write.csv(WHO_Europe,"WHO_Europe.csv")`        ->Save the data to a csv file.WHO_Europe.csv is th ename of the file to which we want to save.
-`ls()`      ->To list all variables.
-`rm(WHO_Europe)`        ->To delete WHO_Europe variables.
+`WHO_Europe = subset(WHO,Region=="Europe")`     ->Create a new dataset with only the countries in Europe.  
+`write.csv(WHO_Europe,"WHO_Europe.csv")`        ->Save the data to a csv file.WHO_Europe.csv is th ename of the file to which we want to save.  
+`ls()`      ->To list all variables.  
+`rm(WHO_Europe)`        ->To delete WHO_Europe variables.  
 
 
 ## Video 5: Data Analysis - Summary Statistics and Scatterplots
