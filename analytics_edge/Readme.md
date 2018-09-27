@@ -17,6 +17,7 @@ summary(WHO)        ->To view summary of each variable.
 ```
 
 `WHO_Europe = subset(WHO,Region=="Europe")`     ->Create a new dataset with only the countries in Europe.
+
 `write.csv(WHO_Europe,"WHO_Europe.csv")`        ->Save the data to a csv file.WHO_Europe.csv is th ename of the file to which we want to save.
 `ls()`      ->To list all variables.
 `rm(WHO_Europe)`        ->To delete WHO_Europe variables.
@@ -42,7 +43,9 @@ summary(WHO$Under15)    ->To get summary.
                                     -FertilityRate on y-axis.
 
 `Outliers=subset(WHO,GNI>10000 & Fertility>2.5)`        ->This will save the content in outliers which satisfies both conditions.
+
 `nrow(Outliers)`        ->This will give the number of rows in outliers and since each row contains only one country so the number of rows will tell us the number of country.
+
 `Outliers[c("Country","GNI",FertilityRate")]
 
 
