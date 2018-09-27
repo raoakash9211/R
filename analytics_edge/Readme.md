@@ -26,27 +26,25 @@ summary(WHO)        ->To view summary of each variable.
 ## Video 5: Data Analysis - Summary Statistics and Scatterplots
 
 ```
-WHO$Under15             ->This outputs the Under15 vector of the dataframe WHO.
-mean(WHO$Under15)       ->To get mean.
-sd(WHO$Under15)         ->To get standard deviation.
-summary(WHO$Under15)    ->To get summary.
+WHO$Under15             ->This outputs the Under15 vector of the dataframe WHO.  
+mean(WHO$Under15)       ->To get mean.  
+sd(WHO$Under15)         ->To get standard deviation.  
+summary(WHO$Under15)    ->To get summary.  
 ```
 
-1st Quartile    ->It is the value for which 25% of the data is less than that value.
-3rd Quartile    ->It is the value for which 75% of the data is less than that value.
+1st Quartile    ->It is the value for which 25% of the data is less than that value.  
+3rd Quartile    ->It is the value for which 75% of the data is less than that value.  
 
-`which.min(WHO$Under15)`    ->This will give row number of minimum value in Under15.
-`WHO$Country[row.no]`        ->To view the name of a country in a specific row.
-`which.max(WHO$Under15)`    ->This will give row number of maximum value in Under15.
-`plot(WHO$GNI,WHO$FertilityRate)`   ->To plot a graph.
-                                    -GNI on x-axis
-                                    -FertilityRate on y-axis.
+`which.min(WHO$Under15)`    ->This will give row number of minimum value in Under15.  
+`WHO$Country[row.no]`        ->To view the name of a country in a specific row.  
+`which.max(WHO$Under15)`    ->This will give row number of maximum value in Under15.  
+`plot(WHO$GNI,WHO$FertilityRate)`   ->To plot a graph.  
+                                    -GNI on x-axis  
+                                    -FertilityRate on y-axis.  
 
-`Outliers=subset(WHO,GNI>10000 & Fertility>2.5)`        ->This will save the content in outliers which satisfies both conditions.
-
-`nrow(Outliers)`        ->This will give the number of rows in outliers and since each row contains only one country so the number of rows will tell us the number of country.
-
-`Outliers[c("Country","GNI",FertilityRate")]
+`Outliers=subset(WHO,GNI>10000 & Fertility>2.5)`        ->This will save the content in outliers which satisfies both conditions.  
+`nrow(Outliers)`        ->This will give the number of rows in outliers and since each row contains only one country so the number of rows will tell us the number of country.  
+`Outliers[c("Country","GNI",FertilityRate")]  
 
 
 
