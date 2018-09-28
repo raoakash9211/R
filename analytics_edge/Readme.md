@@ -43,12 +43,30 @@ summary(WHO$Under15)    ->To get summary.
 
 `Outliers=subset(WHO,GNI>10000 & Fertility>2.5)`        ->This will save the content in outliers which satisfies both conditions.  
 `nrow(Outliers)`        ->This will give the number of rows in outliers and since each row contains only one country so the number of rows will tell us the number of country.  
-`Outliers[c("Country","GNI",FertilityRate")]  
+`Outliers[c("Country","GNI",FertilityRate")]`   ->This will show these three values for the countries in Outliers subset.  
 
 
+## Video 6: Data Analytics - Plots and Summary Tables
+
+`hist(WHO$CelllularSubscribers)`     ->To create histogram of a value.  
+Histogram is useful for understanding the distribution of a variable.  
+`boxplot(WHO$LifeExpectancy ~ WHO$Region)`    ->Useful for understanding the statistical range b/w the first & third quartiles with the middle line marking the median value.  
+The dashed lines at the top and bottom of the box often called whiskers show the range from the minimum to maximum values including any outliers, which are plotted as circles.  
+
+```
+boxplot(WHO$LifeExpectancy ~ WHO$Region,xlab="",ylab="LifeExpectancy",main="LifeExpectancy of Country by Region")       ->xlab for x-axis
+                                                                                                                        ->ylab for y-axis
+                                                                                                                        ->main for title of graph
+```
+`table(WHO$Region)`     ->To make table of Region variable.  
+`tapply(WHO$Over60,WHO$Region,mean)`     ->This splits the observation by Region and then computes the mean of the variable Over60.  
+`tapply` splits the data by the second argument & then apply the third argument function to the variable given as the first argument.  
+`tapply(WHO$LiteracyRate,WHO$Region,min,na.rm=TRUE)`    ->This will give the minimum value and will leave the blank entries.  
+If we do not apply `na.rm=TRUE`, the the result will be `NA` if there is any blan entry in that row.  
 
 
+## Video 7: Saving with Script Files
 
+All the commands can be saved in a file and we can run all at one time by selecting all the commands and then by pressing `Control+R`. We can also add comments in the script file.
 
-
-
+Comments in R   ->`# Enter comment here`
