@@ -70,3 +70,41 @@ If we do not apply `na.rm=TRUE`, the the result will be `NA` if there is any bla
 All the commands can be saved in a file and we can run all at one time by selecting all the commands and then by pressing `Control+R`. We can also add comments in the script file.
 
 Comments in R   ->`# Enter comment here`
+
+
+
+# Understanding Food : Nuritional education with Data(Recitation)
+
+## Video 2 - Working with Data in R
+
+- Download and import USDA.scv.  
+- `getwd()` - To view the current working directory.  
+- `USDA=read.csv("USDA.csv")` - To read the info from a dataset.  
+- `str(USDA)`   - To view structure.  
+- `summary(USDA)` - To view summary.
+                    - 1st quartile  
+                    - Median  
+                    - Mean  
+                    - 3rd quartile  
+                    - Max  
+                    - NA's - blank cells  
+
+## Video 3 - Data Analysis  
+
+- `USDA$Sodium` - To view all entries in a sodium table.  
+- `which.max(USDA$Sodium)`  - Tells that which row has max entry.  
+- `names(USDA)`     - Names the variables stored in USDA.  
+- `USDA$Description` [row. no.]   - To view Description of a perticular row.  
+- `HighSodium = subset(USDA, Sodium>10000)` - This will store all the entries which has sodium concentration more than 10000 in a new dataframe HighSodium.
+- `nrow(HighSodium)`    - To get no. of rows in HighSodium.
+- `HighSodium$Description   - To get Description of the data in HighSodium.  
+- `match("CAVIAR",USDA$Description)` - To get desc of the salts in HighSodium.
+- `USDA$Sodium [row no.]`   - To get the sodium level of a salt.  
+- `USDA$Sodium[match("CAVIAR",USDA$Description)]`  
+- `summary(USDA$Sodium)`    - To get summary.
+- `sd(USDA$Sodium, na.rm=TRUE)  - To get standard deviation. If we don't use `na.rm=TRUE`, we will get NA as it will remove all Non Availabe entries.  
+
+## Video 4 - Creating Plots in R
+
+- `plot(USDA$Protein,USDA$TotalFat)`
+- `plot(USDA$Protein,USDA$TotalFat,xlab="Protein",ylab="Fat",main="Protein vs Fat",col="red")`  - To plot the graph.
