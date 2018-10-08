@@ -125,20 +125,24 @@ Repeat the ablve with Fat, Carbohydrates and Proteins.
 ## Video 6 - Adding Variables
 
 - `table(USDA$HighSodium)`  - This will show the number of TRUE & FALSE values.  
+```
 ex:      0       1  
         4884    2090  
-
+```
 - `table(USDA$HighSodium,USDA$HighFat)`  
+```
 ex:      0       1  
 0       3529    1355  
 1       1378    712  
-
+```
 - `tapply(USDA$Iron,USDA$HighProtein,mean,na.rm=TRUE)`  - This will give us the mean value of common TRUE and FALSE i.e. 1 & 0 entries of Iron & Protein.  
+```
 ex:         0           1  
         2.558945    3.197294  
-
+```
 - `tapply(USDA$VitaminC,USDA$HighCarbs,max,na.rm=TRUE)`  
+```
 ex:       0       1  
         1677.6  2400  
-
+```
 - `tapply(USDA$VitaminC,USDA$HighCarbs,summary,na.rm=TRUE)`  
