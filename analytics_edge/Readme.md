@@ -105,6 +105,40 @@ Comments in R   ->`# Enter comment here`
 - `sd(USDA$Sodium, na.rm=TRUE)  - To get standard deviation. If we don't use `na.rm=TRUE`, we will get NA as it will remove all Non Availabe entries.  
 
 ## Video 4 - Creating Plots in R
+```
+plot(USDA$Protein,USDA$TotalFat)
+plot(USDA$Protein,USDA$TotalFat,xlab="Protein",ylab="Fat",main="Protein vs Fat",col="red")  - To plot the graph.
+hist(USDA$VitaminC,xlab="Vitamin C (mg)",main="Histogram of Vitamin C levels")  - To plot histogram.
+hist(USDA$VitaminC,xlab="Vitamin C (mg)",main="Histogram of Vitamin C levels",xlim=c(0,100))
+hist(USDA$VitaminC,xlab="Vitamin C (mg)",main="Histogram of Vitamin C levels",xlim=c(0,100),breaks=100)
+boxplot(USDA$Sugar, main="Boxplot of Sugar levels",ylab="Sugar (g)")
+```
 
-- `plot(USDA$Protein,USDA$TotalFat)`
-- `plot(USDA$Protein,USDA$TotalFat,xlab="Protein",ylab="Fat",main="Protein vs Fat",col="red")`  - To plot the graph.
+## Video 5 - Adding Variables
+
+- `HighSodium = USDA$Sodium = USDA$Sodium>mean(USDA$Sodium,na.rm=TRUE)`  - This will save the value as logical means TRUE/FALES.  
+- `str(HighSodium)`  
+- `HighSodium = as.numeric(USDA$Sodium>mean(USDA$SOdium,na.rm=TRUE))`   - This will convert TRUE as 1 and FALSE as 0.  
+- `USDA$HighSodium = as.numeric(USDA$Sodium>mean(USDA$SOdium,na.rm=TRUE))`  - To add HighSodium to USDA dataframe.  
+Repeat the ablve with Fat, Carbohydrates and Proteins.  
+
+## Video 6 - Adding Variables
+
+- `table(USDA$HighSodium)`  - This will show the number of TRUE & FALSE values.  
+ex:      0       1  
+        4884    2090  
+
+- `table(USDA$HighSodium,USDA$HighFat)`  
+ex:      0       1  
+0       3529    1355  
+1       1378    712  
+
+- `tapply(USDA$Iron,USDA$HighProtein,mean,na.rm=TRUE)`  - This will give us the mean value of common TRUE and FALSE i.e. 1 & 0 entries of Iron & Protein.  
+ex:         0           1  
+        2.558945    3.197294  
+
+- `tapply(USDA$VitaminC,USDA$HighCarbs,max,na.rm=TRUE)`  
+ex:       0       1  
+        1677.6  2400  
+
+- `tapply(USDA$VitaminC,USDA$HighCarbs,summary,na.rm=TRUE)`  
