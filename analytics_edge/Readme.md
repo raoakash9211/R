@@ -146,6 +146,3 @@ ex:       0       1
         1677.6  2400  
 ```
 - `tapply(USDA$VitaminC,USDA$HighCarbs,summary,na.rm=TRUE)`  
-```r
-print(hellp)
-```
