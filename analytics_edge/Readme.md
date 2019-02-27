@@ -4,7 +4,7 @@
 
 Firstly import WHO.csv file in R studio and then perform the following commands.
 
-```r
+```
 str(WHO)            ->To view structures of dataset.
 summary(WHO)        ->To view summary of each variable.
                       ->This will give us:
